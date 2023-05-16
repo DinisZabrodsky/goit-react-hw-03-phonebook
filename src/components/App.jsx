@@ -84,7 +84,7 @@ render() {
             <Filter onFilter={this.onFilter} filterValue={this.state.filter} />
 
             <ul>
-                <ContactList filterValue={this.state.filter} getContacts={this.getContacts()} deleteContact={this.deleteContact}/>
+                <ContactList formContacts={this.state.contacts} filterValue={this.state.filter} getContacts={this.getContacts()} deleteContact={this.deleteContact}/>
             </ul>
     </div>
     )
