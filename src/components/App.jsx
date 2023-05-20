@@ -52,6 +52,8 @@ addContact = (e) => {
         contacts: [...prev.contacts, newContact]
         })
     ) 
+
+    e.currentTarget.reset();
 }
 
 onFilter = ({target: {value}}) => {
